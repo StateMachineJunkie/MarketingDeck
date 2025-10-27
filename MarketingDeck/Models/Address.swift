@@ -41,6 +41,14 @@ extension Address {
     var searchIndex: String {
         "\(address1)\(address2)\(city)\(state)\(zip)"
     }
+
+    var streetAddress: String {
+        if address2.isEmpty {
+            "\(address1)"
+        } else {
+            "\(address1)\n\(address2)"
+        }
+    }
 }
 
 extension Address: CustomStringConvertible {

@@ -27,7 +27,7 @@ struct TargetDetailView: View {
                     .multilineTextAlignment(.leading)
             }
 
-            MapView(address: target.address)
+            MapView(target: target)
         }
         .navigationTitle("\(target.name)")
     }
