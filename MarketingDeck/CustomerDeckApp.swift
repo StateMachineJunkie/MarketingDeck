@@ -1,6 +1,6 @@
 //
-//  CustomerDeckApp.swift
-//  CustomerDeck
+//  MarketingDeckApp.swift
+//  MarketingDeck
 //
 //  Created by Michael Crawford on 10/24/25.
 //
@@ -9,10 +9,10 @@ import SwiftUI
 import SwiftData
 
 @main
-struct CustomerDeckApp: App {
+struct MarketingDeckApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            MarketingTarget.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

@@ -24,25 +24,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5C97EEA12EAC1E2000062483 /* CustomerDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomerDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C97EEB02EAC1E2100062483 /* CustomerDeckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomerDeckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C97EEBA2EAC1E2100062483 /* CustomerDeckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomerDeckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C97EEA12EAC1E2000062483 /* MarketingDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketingDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C97EEB02EAC1E2100062483 /* MarketingDeckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketingDeckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C97EEBA2EAC1E2100062483 /* MarketingDeckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketingDeckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5C97EEA32EAC1E2000062483 /* CustomerDeck */ = {
+		5C97EEA32EAC1E2000062483 /* MarketingDeck */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CustomerDeck;
+			path = MarketingDeck;
 			sourceTree = "<group>";
 		};
-		5C97EEB32EAC1E2100062483 /* CustomerDeckTests */ = {
+		5C97EEB32EAC1E2100062483 /* MarketingDeckTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CustomerDeckTests;
+			path = MarketingDeckTests;
 			sourceTree = "<group>";
 		};
-		5C97EEBD2EAC1E2100062483 /* CustomerDeckUITests */ = {
+		5C97EEBD2EAC1E2100062483 /* MarketingDeckUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CustomerDeckUITests;
+			path = MarketingDeckUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		5C97EE982EAC1E2000062483 = {
 			isa = PBXGroup;
 			children = (
-				5C97EEA32EAC1E2000062483 /* CustomerDeck */,
-				5C97EEB32EAC1E2100062483 /* CustomerDeckTests */,
-				5C97EEBD2EAC1E2100062483 /* CustomerDeckUITests */,
+				5C97EEA32EAC1E2000062483 /* MarketingDeck */,
+				5C97EEB32EAC1E2100062483 /* MarketingDeckTests */,
+				5C97EEBD2EAC1E2100062483 /* MarketingDeckUITests */,
 				5C97EEA22EAC1E2000062483 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		5C97EEA22EAC1E2000062483 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C97EEA12EAC1E2000062483 /* CustomerDeck.app */,
-				5C97EEB02EAC1E2100062483 /* CustomerDeckTests.xctest */,
-				5C97EEBA2EAC1E2100062483 /* CustomerDeckUITests.xctest */,
+				5C97EEA12EAC1E2000062483 /* MarketingDeck.app */,
+				5C97EEB02EAC1E2100062483 /* MarketingDeckTests.xctest */,
+				5C97EEBA2EAC1E2100062483 /* MarketingDeckUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C97EEA02EAC1E2000062483 /* CustomerDeck */ = {
+		5C97EEA02EAC1E2000062483 /* MarketingDeck */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C97EEC42EAC1E2100062483 /* Build configuration list for PBXNativeTarget "CustomerDeck" */;
+			buildConfigurationList = 5C97EEC42EAC1E2100062483 /* Build configuration list for PBXNativeTarget "MarketingDeck" */;
 			buildPhases = (
 				5C97EE9D2EAC1E2000062483 /* Sources */,
 				5C97EE9E2EAC1E2000062483 /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5C97EEA32EAC1E2000062483 /* CustomerDeck */,
+				5C97EEA32EAC1E2000062483 /* MarketingDeck */,
 			);
-			name = CustomerDeck;
+			name = MarketingDeck;
 			packageProductDependencies = (
 			);
 			productName = CustomerDeck;
-			productReference = 5C97EEA12EAC1E2000062483 /* CustomerDeck.app */;
+			productReference = 5C97EEA12EAC1E2000062483 /* MarketingDeck.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5C97EEAF2EAC1E2100062483 /* CustomerDeckTests */ = {
+		5C97EEAF2EAC1E2100062483 /* MarketingDeckTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C97EEC72EAC1E2100062483 /* Build configuration list for PBXNativeTarget "CustomerDeckTests" */;
+			buildConfigurationList = 5C97EEC72EAC1E2100062483 /* Build configuration list for PBXNativeTarget "MarketingDeckTests" */;
 			buildPhases = (
 				5C97EEAC2EAC1E2100062483 /* Sources */,
 				5C97EEAD2EAC1E2100062483 /* Frameworks */,
@@ -131,18 +131,18 @@
 				5C97EEB22EAC1E2100062483 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				5C97EEB32EAC1E2100062483 /* CustomerDeckTests */,
+				5C97EEB32EAC1E2100062483 /* MarketingDeckTests */,
 			);
-			name = CustomerDeckTests;
+			name = MarketingDeckTests;
 			packageProductDependencies = (
 			);
 			productName = CustomerDeckTests;
-			productReference = 5C97EEB02EAC1E2100062483 /* CustomerDeckTests.xctest */;
+			productReference = 5C97EEB02EAC1E2100062483 /* MarketingDeckTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5C97EEB92EAC1E2100062483 /* CustomerDeckUITests */ = {
+		5C97EEB92EAC1E2100062483 /* MarketingDeckUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C97EECA2EAC1E2100062483 /* Build configuration list for PBXNativeTarget "CustomerDeckUITests" */;
+			buildConfigurationList = 5C97EECA2EAC1E2100062483 /* Build configuration list for PBXNativeTarget "MarketingDeckUITests" */;
 			buildPhases = (
 				5C97EEB62EAC1E2100062483 /* Sources */,
 				5C97EEB72EAC1E2100062483 /* Frameworks */,
@@ -154,13 +154,13 @@
 				5C97EEBC2EAC1E2100062483 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				5C97EEBD2EAC1E2100062483 /* CustomerDeckUITests */,
+				5C97EEBD2EAC1E2100062483 /* MarketingDeckUITests */,
 			);
-			name = CustomerDeckUITests;
+			name = MarketingDeckUITests;
 			packageProductDependencies = (
 			);
 			productName = CustomerDeckUITests;
-			productReference = 5C97EEBA2EAC1E2100062483 /* CustomerDeckUITests.xctest */;
+			productReference = 5C97EEBA2EAC1E2100062483 /* MarketingDeckUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5C97EE9C2EAC1E2000062483 /* Build configuration list for PBXProject "CustomerDeck" */;
+			buildConfigurationList = 5C97EE9C2EAC1E2000062483 /* Build configuration list for PBXProject "MarketingDeck" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C97EEA02EAC1E2000062483 /* CustomerDeck */,
-				5C97EEAF2EAC1E2100062483 /* CustomerDeckTests */,
-				5C97EEB92EAC1E2100062483 /* CustomerDeckUITests */,
+				5C97EEA02EAC1E2000062483 /* MarketingDeck */,
+				5C97EEAF2EAC1E2100062483 /* MarketingDeckTests */,
+				5C97EEB92EAC1E2100062483 /* MarketingDeckUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		5C97EEB22EAC1E2100062483 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5C97EEA02EAC1E2000062483 /* CustomerDeck */;
+			target = 5C97EEA02EAC1E2000062483 /* MarketingDeck */;
 			targetProxy = 5C97EEB12EAC1E2100062483 /* PBXContainerItemProxy */;
 		};
 		5C97EEBC2EAC1E2100062483 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5C97EEA02EAC1E2000062483 /* CustomerDeck */;
+			target = 5C97EEA02EAC1E2000062483 /* MarketingDeck */;
 			targetProxy = 5C97EEBB2EAC1E2100062483 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,9 +395,21 @@
 				DEVELOPMENT_TEAM = 4887CWSKD9;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Marketing Deck";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -413,18 +425,20 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.CustomerDeck;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.MarketingDeck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
@@ -439,9 +453,21 @@
 				DEVELOPMENT_TEAM = 4887CWSKD9;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Marketing Deck";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,18 +483,20 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.CustomerDeck;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.MarketingDeck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
@@ -494,7 +522,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomerDeck.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomerDeck";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketingDeck.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarketingDeck";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
@@ -520,7 +548,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomerDeck.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomerDeck";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MarketingDeck.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MarketingDeck";
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
@@ -578,7 +606,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C97EE9C2EAC1E2000062483 /* Build configuration list for PBXProject "CustomerDeck" */ = {
+		5C97EE9C2EAC1E2000062483 /* Build configuration list for PBXProject "MarketingDeck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C97EEC22EAC1E2100062483 /* Debug */,
@@ -587,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C97EEC42EAC1E2100062483 /* Build configuration list for PBXNativeTarget "CustomerDeck" */ = {
+		5C97EEC42EAC1E2100062483 /* Build configuration list for PBXNativeTarget "MarketingDeck" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C97EEC52EAC1E2100062483 /* Debug */,
@@ -596,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C97EEC72EAC1E2100062483 /* Build configuration list for PBXNativeTarget "CustomerDeckTests" */ = {
+		5C97EEC72EAC1E2100062483 /* Build configuration list for PBXNativeTarget "MarketingDeckTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C97EEC82EAC1E2100062483 /* Debug */,
@@ -605,7 +633,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C97EECA2EAC1E2100062483 /* Build configuration list for PBXNativeTarget "CustomerDeckUITests" */ = {
+		5C97EECA2EAC1E2100062483 /* Build configuration list for PBXNativeTarget "MarketingDeckUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C97EECB2EAC1E2100062483 /* Debug */,
