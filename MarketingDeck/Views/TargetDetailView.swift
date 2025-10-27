@@ -12,19 +12,23 @@ struct TargetDetailView: View {
     @Bindable var target: MarketingTarget
 
     var body: some View {
-        VStack {
-            HStack {
-                Label("Name", systemImage: "person.fill")
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(alignment: .firstTextBaseline) {
+                Image(systemName: "person.fill")
+                    .frame(width: 24, alignment: .center)
                 Text(target.name)
+                    .multilineTextAlignment(.leading)
             }
-            .border(.red)
-            HStack {
-                Label("Address", systemImage: "house.fill")
+
+            HStack(alignment: .firstTextBaseline) {
+                Image(systemName: "house.fill")
+                    .frame(width: 24, alignment: .center)
                 Text(target.address.description)
+                    .multilineTextAlignment(.leading)
             }
-            .border(.blue)
+
+            MapView(address: target.address)
         }
-        .border(.yellow)
         .navigationTitle("\(target.name)")
     }
 }

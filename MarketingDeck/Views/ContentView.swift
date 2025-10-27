@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  CustomerDeck
+//  MarketingDeck
 //
 //  Created by Michael Crawford on 10/24/25.
 //

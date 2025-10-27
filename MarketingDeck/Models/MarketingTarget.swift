@@ -30,7 +30,7 @@ extension MarketingTarget {
 }
 
 extension MarketingTarget: CustomStringConvertible {
-    var description: String {
+    @MainActor var description: String {
         "\(name)\n\(address)"
     }
 }

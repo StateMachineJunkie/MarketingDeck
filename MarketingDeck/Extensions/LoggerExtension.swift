@@ -14,7 +14,7 @@ extension Logger {
         if let aClass = T.self as? AnyClass {
             return Logger(subsystem: Bundle.loggerID, category: String(describing: aClass))
         } else {
-            return Logger(subsystem: "com.cdellc.CustomerDeck", category: String(describing: T.self))
+            return Logger(subsystem: "com.cdellc.MarketingDeck", category: String(describing: T.self))
         }
     }
 

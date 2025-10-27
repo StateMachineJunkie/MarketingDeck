@@ -1,13 +1,13 @@
 //
-//  CustomerDeckUITestsLaunchTests.swift
-//  CustomerDeckUITests
+//  MarketingDeckUITestsLaunchTests.swift
+//  MarketingDeckUITests
 //
 //  Created by Michael Crawford on 10/24/25.
 //
 
 import XCTest
 
-final class CustomerDeckUITestsLaunchTests: XCTestCase {
+final class MarketingDeckUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

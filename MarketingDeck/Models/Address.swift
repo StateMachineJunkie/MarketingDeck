@@ -45,6 +45,10 @@ extension Address {
 
 extension Address: CustomStringConvertible {
     var description: String {
-        "\(address1)\n\(address2)\n\(city), \(state), \(zip)"
+        if address2.isEmpty {
+            "\(address1)\n\(city), \(state), \(zip)"
+        } else {
+            "\(address1)\n\(address2)\n\(city), \(state), \(zip)"
+        }
     }
 }

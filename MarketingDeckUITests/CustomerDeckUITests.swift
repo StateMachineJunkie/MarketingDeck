@@ -1,13 +1,13 @@
 //
-//  CustomerDeckUITests.swift
-//  CustomerDeckUITests
+//  MarketingDeckUITests.swift
+//  MarketingDeckUITests
 //
 //  Created by Michael Crawford on 10/24/25.
 //
 
 import XCTest
 
-final class CustomerDeckUITests: XCTestCase {
+final class MarketingDeckUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
