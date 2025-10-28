@@ -13,12 +13,27 @@ struct ContentView: View {
     /// The SwiftData model context injected from the environment, allowing for data operations.
     @Environment(\.modelContext) private var modelContext
     @State private var isImporting = false
+    @State private var sortOrder = TargetListView.SortOrder.ascending
 
     var body: some View {
         TabView {
             NavigationStack {
-                TargetListView()
+                TargetListView(sortOrder: sortOrder)
                     .toolbar {
+                        ToolbarItemGroup(placement: .navigationBarLeading) {
+                            Button {
+                                sortOrder = .ascending
+                            } label: {
+                                Image(systemName: sortOrder == .ascending ? "arrow.up.square.fill" : "arrow.up.square")
+                            }
+
+                            Button {
+                                sortOrder = .descending
+                            } label: {
+                                Image(systemName: sortOrder == .descending ? "arrow.down.square.fill" :"arrow.down.square")
+                            }
+                        }
+
                         ToolbarItem {
                             Button(action: {
                                 isImporting = true
