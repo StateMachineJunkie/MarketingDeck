@@ -27,6 +27,7 @@ extension ModelContext {
     func importMarketingTargets(from csvFile: URL) throws {
         let logger = Logger.logger(for: Self.self)
         let table = try MLDataTable(contentsOf: csvFile)
+        let importContext = ModelContext(self.container)
 
         logger.debug("\(table)")
 
@@ -61,7 +62,26 @@ extension ModelContext {
             let address = Address(address1: address1, city: city, state: state, zip: zip!)
             let target = MarketingTarget(name: name, address: address)
             logger.debug("\(target)")
-            insert(target)
+            importContext.insert(target)
+        }
+
+        // Check this import before committing to main.
+        // TODO: Come up with some reasonable checks to make before committing this data.
+
+        // Replace main context contents with import contents.
+        try transaction {
+            // Clear out old data in main context
+            try self.delete(model: MarketingTarget.self)
+            let importedMarketingTargets = try importContext.fetch(FetchDescriptor<MarketingTarget>())
+
+            // Insert new data from import
+            for target in importedMarketingTargets {
+                let newMarketingTarget = MarketingTarget(name: target.name, address: target.address)
+                self.insert(newMarketingTarget)
+            }
+
+            // Save the main context
+            try save()
         }
     }
 }
