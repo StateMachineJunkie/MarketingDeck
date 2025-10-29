@@ -50,9 +50,9 @@ struct TargetListView: View {
                     Section(header: Header(text: "\(filteredTargets.count) Records")) {
                         ForEach(filteredTargets) { target in
                             Button {
-                                isLoading = true
-                                Task {
-                                    if target.location == nil {
+                                if target.location == nil {
+                                    isLoading = true
+                                    Task {
                                         do {
                                             let coord = try await geocodeWithMapKit(address: target.address)
                                             target.updateLocation(with: coord)
@@ -61,10 +61,10 @@ struct TargetListView: View {
                                             self.error = error
                                             isShowingError = true
                                         }
-                                    } else {
-                                        navigate(to: target)
+                                        isLoading = false
                                     }
-                                    isLoading = false
+                                } else {
+                                    navigate(to: target)
                                 }
                             } label: {
                                 Text(target.name)
