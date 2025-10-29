@@ -19,7 +19,7 @@ nonisolated struct Location: Codable, Hashable, Sendable {
 }
 
 extension Location {
-    var coordinate2D: CLLocationCoordinate2D? {
+    var coordinate2D: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
 
