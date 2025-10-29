@@ -69,7 +69,6 @@ struct TargetListView: View {
                             } label: {
                                 Text(target.name)
                             }
-                            .buttonStyle(.plain)
                         }
                     }
                 }
