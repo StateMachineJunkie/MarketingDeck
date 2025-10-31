@@ -24,6 +24,11 @@ extension ModelContext {
         case zipcode    = "Zipcode"
     }
 
+    func hasAnyRecords<T: PersistentModel>(of type: T.Type) throws -> Bool {
+        let count = try recordCount(of: type)
+        return count > 0
+    }
+
     func importMarketingTargets(from csvFile: URL) throws {
         let logger = Logger.logger(for: Self.self)
         let table = try MLDataTable(contentsOf: csvFile)
@@ -83,5 +88,10 @@ extension ModelContext {
             // Save the main context
             try save()
         }
+    }
+
+    func recordCount<T: PersistentModel>(of type: T.Type) throws -> Int {
+        let descriptor = FetchDescriptor<T>()
+        return try fetchCount(descriptor)
     }
 }

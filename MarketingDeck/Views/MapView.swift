@@ -23,6 +23,14 @@ struct MapView: View {
             }
         }
         .mapStyle(.standard)
+        .mapControls {
+            // If no map controls are specified the compass and scale will be included by default. By specifying the
+            // user-location button, the defaults are overridden so you have to specify every option you want or you
+            // will not get them.
+            MapUserLocationButton()
+            MapCompass()
+            MapScaleView()
+        }
         .onAppear {
             cameraPosition = .region(MKCoordinateRegion(center: target.location!.coordinate2D,
                                                         span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)))

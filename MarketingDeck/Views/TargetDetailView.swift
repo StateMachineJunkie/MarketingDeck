@@ -28,8 +28,27 @@ struct TargetDetailView: View {
             }
 
             MapView(target: target)
+
+            #if false
+            if let location = target.location {
+                TargetLookAroundView(coordinate: location.coordinate2D)
+            }
+            #endif
         }
         .navigationTitle("\(target.name)")
+        #if false
+        .overlay {
+            if let location = target.location {
+                VStack {
+                    Spacer()
+                    TargetLookAroundView(coordinate: location.coordinate2D)
+                        .frame(height: 200)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .padding()
+                }
+            }
+        }
+        #endif
     }
 }
 

@@ -35,16 +35,41 @@ struct ContentView: View {
                         }
 
                         ToolbarItem {
-                            Button(action: {
-                                isImporting = true
-                            }) {
-                                Image(systemName: "square.and.arrow.down")
+                            Menu {
+                                Button {
+                                    isImporting = true
+                                } label: {
+                                    Label("Import CSV", systemImage: "square.and.arrow.down")
+                                }
+
+                                Button {
+                                    Task {
+                                        let marketingTargets = try modelContext.fetch(FetchDescriptor<MarketingTarget>())
+                                        guard marketingTargets.count > 0 else { return }
+                                        let pdfData = AddressLabelPDFRenderer.makePDF(for: marketingTargets)
+                                        let fileURL = FileManager.default.temporaryDirectory.appendingPathComponent("MailingLabels.pdf")
+                                        try pdfData.write(to: fileURL)
+
+                                        let printController = UIPrintInteractionController.shared
+                                        let info = UIPrintInfo(dictionary: nil)
+                                        info.outputType = .general
+                                        info.jobName = "Mailing Labels"
+                                        printController.printInfo = info
+                                        printController.printingItem = fileURL
+                                        printController.present(animated: true, completionHandler: nil)
+                                    }
+                                } label: {
+                                    Label("Print Targets Labels", systemImage: "printer")
+                                }
+                                .disabled((try? !modelContext.hasAnyRecords(of: MarketingTarget.self)) ?? false)
+                            } label: {
+                                Image(systemName: "document")
                             }
-                            .fileImporter(isPresented: $isImporting,
-                                          allowedContentTypes: [UTType.commaSeparatedText],
-                                          onCompletion: importCSVFile)
                         }
                     }
+                    .fileImporter(isPresented: $isImporting,
+                                  allowedContentTypes: [UTType.commaSeparatedText],
+                                  onCompletion: importCSVFile)
             }
             .tabItem {
                 Label("Targets", systemImage: "person.3")
