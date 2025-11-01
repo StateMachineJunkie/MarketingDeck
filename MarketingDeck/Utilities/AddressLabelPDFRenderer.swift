@@ -50,14 +50,14 @@ class AddressLabelPDFRenderer {
 
     private static func draw(_ target: MarketingTarget, in rect: CGRect) {
         let paragraph = NSMutableParagraphStyle()
-        paragraph.alignment = .center
+        paragraph.alignment = .left
         let font = UIFont.systemFont(ofSize: 10)
         let attrs: [NSAttributedString.Key: Any] = [
             .font: font,
             .paragraphStyle: paragraph
         ]
 
-        let text = "\(target.name)\n\(target.address.streetAddress)\n\(target.address.city), \(target.address.state) \(target.address.zip)"
+        let text = "\(target.name) or current resident\n\(target.address.streetAddress)\n\(target.address.city), \(target.address.state) \(target.address.zip)"
         let textRect = rect.insetBy(dx: 6, dy: 6)
         text.draw(in: textRect, withAttributes: attrs)
     }
