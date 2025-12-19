@@ -1,6 +1,6 @@
 //
 //  LoggerExtension.swift
-//  PropertyInspector
+//  MarketingDeck
 //
 //  Created by Michael Crawford on 6/20/25.
 //

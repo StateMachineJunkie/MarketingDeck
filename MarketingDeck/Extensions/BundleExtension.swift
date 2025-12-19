@@ -1,6 +1,6 @@
 //
 //  BundleExtension.swift
-//  PropertyInspector
+//  MarketingDeck
 //
 //  Created by Michael Crawford on 6/20/25.
 //
@@ -14,12 +14,5 @@ extension Bundle {
         } else {
             return Bundle.main.description
         }
-    }()
-
-    static let categoryData: Data? = {
-        guard let dataAsset = NSDataAsset(name: "CategoryDescriptors") else {
-            return nil
-        }
-        return dataAsset.data
     }()
 }
