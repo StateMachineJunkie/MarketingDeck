@@ -57,7 +57,7 @@ class AddressLabelPDFRenderer {
             .paragraphStyle: paragraph
         ]
 
-        let text = "\(target.name) or current resident\n\(target.address.streetAddress)\n\(target.address.city), \(target.address.state) \(target.address.zip)"
+        let text = "\(target.name) or Resident\n\(target.address.streetAddress)\n\(target.address.city), \(target.address.state) \(target.address.zip)"
         let textRect = rect.insetBy(dx: 6, dy: 6)
         text.draw(in: textRect, withAttributes: attrs)
     }

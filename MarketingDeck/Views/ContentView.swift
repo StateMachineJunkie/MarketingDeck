@@ -59,7 +59,7 @@ struct ContentView: View {
                                         printController.present(animated: true, completionHandler: nil)
                                     }
                                 } label: {
-                                    Label("Print Targets Labels", systemImage: "printer")
+                                    Label("Print Labels", systemImage: "printer")
                                 }
                                 .disabled((try? !modelContext.hasAnyRecords(of: MarketingTarget.self)) ?? false)
                             } label: {

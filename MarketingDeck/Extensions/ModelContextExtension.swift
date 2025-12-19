@@ -32,9 +32,17 @@ extension ModelContext {
     func importMarketingTargets(from csvFile: URL) throws {
         let logger = Logger.logger(for: Self.self)
         let table = try MLDataTable(contentsOf: csvFile)
-        let importContext = ModelContext(self.container)
 
         logger.debug("\(table)")
+
+        // Parse into plain values first (no insertion in any context yet)
+        struct ParsedRow {
+            let name: String
+            let address: Address
+        }
+
+        var parsed: [ParsedRow] = []
+        parsed.reserveCapacity(table.rows.count)
 
         for row in table.rows {
             logger.debug("\(row)")
@@ -65,24 +73,20 @@ extension ModelContext {
             }
 
             let address = Address(address1: address1, city: city, state: state, zip: zip!)
-            let target = MarketingTarget(name: name, address: address)
-            logger.debug("\(target)")
-            importContext.insert(target)
+            parsed.append(.init(name: name, address: address))
         }
 
-        // Check this import before committing to main.
-        // TODO: Come up with some reasonable checks to make before committing this data.
-
-        // Replace main context contents with import contents.
+        // Perform a single-context, single-transaction replace of data
         try transaction {
-            // Clear out old data in main context
+            // Clear out old data
             try self.delete(model: MarketingTarget.self)
-            let importedMarketingTargets = try importContext.fetch(FetchDescriptor<MarketingTarget>())
 
-            // Insert new data from import
-            for target in importedMarketingTargets {
-                let newMarketingTarget = MarketingTarget(name: target.name, address: target.address)
-                self.insert(newMarketingTarget)
+            // Insert new data
+            for item in parsed {
+                let target = MarketingTarget(name: item.name, address: item.address)
+                // naturalKey is set in init based on name + address
+                self.insert(target)
+                logger.debug("\(target)")
             }
 
             // Save the main context
